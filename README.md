@@ -1,76 +1,48 @@
-📈 Time Series Forecasting of Car Brand Sales
+Time Series Forecasting 5 Merek Teratas di Indonesia
 
-📌 Project Overview
+Deskripsi
+Proyek ini bertujuan untuk menganalisis data penjualan historis dan melakukan peramalan (forecasting) penjualan bulanan untuk lima merek mobil terlaris di Indonesia. Dengan memahami tren dan pola musiman dari data deret waktu (time series), kita dapat memprediksi volume penjualan di masa depan.
 
-This project applies time series forecasting to predict monthly sales of multiple car brands. By analyzing historical sales data, the study compares classical statistical models (SARIMA), machine learning approaches (XGBoost), and deep learning architectures (LSTM) to identify the most accurate forecasting method.
+Analisis ini sangat berguna bagi para pemangku kepentingan di industri otomotif untuk perencanaan strategis, manajemen inventaris, dan strategi pemasaran yang lebih efektif.
 
-🎯 Objectives
+Lima merek yang dianalisis adalah:
 
-Perform exploratory data analysis (EDA) on brand-level car sales.
+Toyota
 
-Build and evaluate multiple forecasting models.
+Daihatsu
 
-Capture trends, seasonality, and patterns in sales.
+Honda
 
-Compare model performance using RMSE, MAE, and MAPE.
+Mitsubishi Motors
 
-Provide insights for strategic planning in the automotive industry.
+Suzuki
 
-📂 Project Structure
-├── data/
-│   ├── car_sales.csv              # Main dataset
-├── notebooks/
-│   ├── 01_EDA.ipynb               # Exploratory Data Analysis
-│   ├── 02_Preprocessing.ipynb     # Data cleaning & feature engineering
-│   ├── 03_Modeling.ipynb          # Forecasting models (SARIMA, XGBoost, LSTM)
-│   └── 04_Evaluation.ipynb        # Model evaluation & insights
-├── src/
-│   ├── preprocessing.py           # Functions for cleaning & feature extraction
-│   ├── models.py                  # Model training scripts
-│   └── utils.py                   # Helper functions
-├── README.md                      # Project documentation
-└── requirements.txt               # Required dependencies
+Daftar Isi
+Dataset
 
-🛠️ Tech Stack
+Instalasi
 
-Programming Language: Python (3.9+)
+Metodologi
 
-Libraries: pandas, numpy, scikit-learn, statsmodels, xgboost, matplotlib, seaborn, tensorflow/keras (for LSTM)
+Hasil
 
-📊 Methodology
+Cara Menjalankan Proyek
 
-Data Preprocessing – handle missing values, feature engineering (lags, rolling means).
+Pengembangan Selanjutnya
 
-Exploratory Data Analysis (EDA) – sales trends, seasonality, top-performing brands.
+Lisensi
 
-Modeling – train SARIMA, XGBoost, and LSTM models.
+Dataset
+Dataset yang digunakan adalah data penjualan mobil bulanan (wholesales) yang bersumber dari laporan GAIKINDO (Gabungan Industri Kendaraan Bermotor Indonesia).
 
-Evaluation – compare models using RMSE, MAE, and MAPE.
+Sumber: Situs Resmi GAIKINDO dan portal berita otomotif.
 
-Insights – recommend the most effective model for forecasting.
+Rentang Waktu: Januari 2019 - Agustus 2025 (contoh).
 
-✅ Results
+Fitur Data:
 
-SARIMA captures seasonality well but struggles with long-term trends.
+Tanggal: Bulan dan tahun pencatatan data.
 
-XGBoost performs well with feature engineering.
+Merek: Nama merek mobil.
 
-LSTM provides strong accuracy in capturing both short-term and long-term dependencies.
-
-Best Model: LSTM with the lowest RMSE and MAPE across test data.
-
-📌 Key Insights
-
-Certain car brands show strong seasonal peaks (e.g., before holidays).
-
-Market fluctuations can be captured better with hybrid approaches.
-
-Accurate forecasting supports inventory management, production planning, and marketing strategies.
-
-🚀 Future Work
-
-Explore hybrid models (SARIMA + ML).
-
-Integrate external factors (inflation, fuel prices, interest rates).
-
-Fine-tune deep learning architectures with more historical data.
+Penjualan: Jumlah unit mobil yang terjual (wholesales).
